@@ -21,7 +21,7 @@ class SearchControl extends GetxController {
     try {
       isLoading(true);
       final response = await http.get(
-        Uri.parse("https://whoa.onrender.com/whoas/random?results=20"),
+        Uri.parse("https://whoa.onrender.com/whoas/random?results=30"),
       );
 
       if (response.statusCode == 200) {
